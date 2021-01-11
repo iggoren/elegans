@@ -1,22 +1,77 @@
 *, *::after, *::before {
     box-sizing: border-box;
 }
+
+/* font-family: 'Noto Sans', sans-serif;
+font-family: 'Playfair Display', serif; */
 body {
     margin: 0;
+    font-family: 'Noto Sans', sans-serif;
    }
-    .nav {
-    }
-    .container {
-    }
-    .nav__row {
-    }
-    .nav__logo {
-    }
-    .nav-list {
-    }
-    .nav-item {
-    }
-    .nav-link {
-    }
-    .nav__cart {
-    }    
+   .nav {
+       padding: 40px 0;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+.nav__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__logo, .nav__logo a {
+    font-style: normal;
+    text-decoration: none;
+font-weight: normal;
+font-size: 28px;
+line-height: 38px;
+color: #000000;
+}
+.nav__logo a:hover {
+    text-decoration: underline;
+}
+.nav-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.nav-item {
+    margin-right: 30px;
+    font-size: 18px;
+}
+.nav-item:last-child {
+    margin-right: 0;
+}
+.nav-link {
+    text-decoration: none;
+    color: #000000;
+}
+.nav-link:hover {
+    color: #F72464;
+}
+.nav__cart {
+}    
+
+.nav__cart-link {
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+    top: 5px;
+}
+.nav__cart-number {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    background: #F72464;
+    text-align: center;
+    line-height: 20px;
+    
+}
