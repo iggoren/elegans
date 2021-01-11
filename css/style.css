@@ -1,0 +1,22 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+   }
+    .nav {
+    }
+    .container {
+    }
+    .nav__row {
+    }
+    .nav__logo {
+    }
+    .nav-list {
+    }
+    .nav-item {
+    }
+    .nav-link {
+    }
+    .nav__cart {
+    }    
