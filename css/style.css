@@ -1,58 +1,79 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
 
+
 /* font-family: 'Noto Sans', sans-serif;
 font-family: 'Playfair Display', serif; */
+
 body {
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
-   }
-   .nav {
-       padding: 40px 0;
 }
+
 .container {
     width: 1170px;
     margin: 0 auto;
 }
+
+
+/*navigation*/
+
+.nav {
+    padding: 40px 0;
+}
+
 .nav__row {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
-.nav__logo, .nav__logo a {
+
+.nav__logo,
+.nav__logo a {
     font-style: normal;
     text-decoration: none;
-font-weight: normal;
-font-size: 28px;
-line-height: 38px;
-color: #000000;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 38px;
+    color: #000000;
+    margin-right: 80px;
 }
+
 .nav__logo a:hover {
     text-decoration: underline;
 }
+
 .nav-list {
     display: flex;
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
+
 .nav-item {
     margin-right: 30px;
     font-size: 18px;
 }
+
 .nav-item:last-child {
     margin-right: 0;
 }
+
 .nav-link {
     text-decoration: none;
     color: #000000;
 }
+
 .nav-link:hover {
     color: #F72464;
 }
+
 .nav__cart {
-}    
+    margin-left: auto;
+}
 
 .nav__cart-link {
     position: relative;
@@ -60,6 +81,7 @@ color: #000000;
     padding: 5px;
     top: 5px;
 }
+
 .nav__cart-number {
     position: absolute;
     top: -5px;
@@ -73,5 +95,66 @@ color: #000000;
     background: #F72464;
     text-align: center;
     line-height: 20px;
-    
 }
+
+
+/* header */
+
+.header {}
+
+.container {}
+
+.header_row {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header_content {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(10px, -50%);
+    width: 670px;
+}
+
+.header_text {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 60px;
+}
+
+.header_title {
+    margin: 0;
+    font-family: Playfair Display, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 96px;
+    margin-bottom: 20px;
+}
+
+.header_btn {}
+
+.button {
+    display: inline-block;
+    padding: 5px 33px 11px;
+    background: #F72464;
+    box-shadow: 0px 4px 15px rgba(123, 12, 46, 0.35);
+    border-radius: 4px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 51px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: box-shadow 0.2s easy-in;
+}
+
+.button:hover {
+    box-shadow: 0px 4px 25px rgba(184, 13, 46, 0.65);
+}
+
+.header_photo {}
